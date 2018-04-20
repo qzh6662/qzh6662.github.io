@@ -302,11 +302,11 @@
       
         <h2 id="方式一：通过Android-Studio自带向导进行签名："><a href="#方式一：通过Android-Studio自带向导进行签名：" class="headerlink" title="方式一：通过Android Studio自带向导进行签名："></a>方式一：通过Android Studio自带向导进行签名：</h2><p>直接点击菜单栏<code>Build&gt;Generate Signed APK...</code>进入签名向导。可以直接创建签名文件，或者选择一个已存在的签名文件进行签名，之后该向导会直接引导用户导出签名后的apk文件。这种方式使用图形化界面引导用户相对使用命令行来说比较简单。</p>
 <h2 id="方式二：通过配置build-gradle："><a href="#方式二：通过配置build-gradle：" class="headerlink" title="方式二：通过配置build.gradle："></a>方式二：通过配置build.gradle：</h2><p>在Moudle:app的build.gradle文件中修改配置如下：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">android&#123;</div><div class="line">	signingConfigs &#123;</div><div class="line">        release &#123;</div><div class="line">            keyAlias '别名'</div><div class="line">            keyPassword '密码'</div><div class="line">            storeFile file('钥匙串路径')</div><div class="line">            storePassword '签名文件密码'</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    buildTypes &#123;</div><div class="line">        debug &#123;</div><div class="line">            buildConfigField "boolean", "DEBUG_LOG", "true"    //打开LOG输出</div><div class="line">            minifyEnabled false     //是否混淆</div><div class="line">            zipAlignEnabled true    //Zipalign优化</div><div class="line">            shrinkResources true    //移除无用的resource文件</div><div class="line">            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'   //加载默认的混淆配置文件和自定义混淆配置文件</div><div class="line">            signingConfig signingConfigs.debug    //签名（此处的签名文件可以不配置，系统会默认生成一个debug key）</div><div class="line">        &#125;</div><div class="line">        release &#123;</div><div class="line">            buildConfigField "boolean", "DEBUG_LOG", "false"</div><div class="line">            minifyEnabled true</div><div class="line">            zipAlignEnabled true</div><div class="line">            shrinkResources true</div><div class="line">            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'</div><div class="line">            signingConfig signingConfigs.release    //此处的release就是上面signingConfigs中声明的</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">	signingConfigs &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            keyAlias '别名'</span><br><span class="line">            keyPassword '密码'</span><br><span class="line">            storeFile file('钥匙串路径')</span><br><span class="line">            storePassword '签名文件密码'</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        debug &#123;</span><br><span class="line">            buildConfigField "boolean", "DEBUG_LOG", "true"    //打开LOG输出</span><br><span class="line">            minifyEnabled false     //是否混淆</span><br><span class="line">            zipAlignEnabled true    //Zipalign优化</span><br><span class="line">            shrinkResources true    //移除无用的resource文件</span><br><span class="line">            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'   //加载默认的混淆配置文件和自定义混淆配置文件</span><br><span class="line">            signingConfig signingConfigs.debug    //签名（此处的签名文件可以不配置，系统会默认生成一个debug key）</span><br><span class="line">        &#125;</span><br><span class="line">        release &#123;</span><br><span class="line">            buildConfigField "boolean", "DEBUG_LOG", "false"</span><br><span class="line">            minifyEnabled true</span><br><span class="line">            zipAlignEnabled true</span><br><span class="line">            shrinkResources true</span><br><span class="line">            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'</span><br><span class="line">            signingConfig signingConfigs.release    //此处的release就是上面signingConfigs中声明的</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>signingConfigs中的四项内容就是生成签名文件的时候填写的内容，四项内容缺一不可，而且必须保证每一项都填写正确，否则生成的时候会报错。之后在Android Studio下方的Terminal中执行<code>./gradlew assembleRelease</code>来生成apk文件。</p>
 <p>如果生成过程中报错可以执行<code>./gradlew signingReport</code>来检查签名文件的配置是否正确。</p>
 <p>在生成apk文件时会出现一个警告，可以通过在gradle.properties文件中添加一行配置</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">org.gradle.daemon=true</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org.gradle.daemon=true</span><br></pre></td></tr></table></figure>
 <p>这项配置可以提高生成速度，个人测试时编译速度能提高一倍。如果不加这项配置则需要在每次编译时执行<code>./gradlew --daemon assembleRelease</code>来达到相同效果。不过打开这个选项时gradle也会占用一定内存，它是通过打开一个持续的编译进程来达到加速的目的，可以在开发结束之后执行<code>./gradlew --stop</code>来释放掉这些内存</p>
 
       
@@ -426,7 +426,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -439,7 +439,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -511,7 +511,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
