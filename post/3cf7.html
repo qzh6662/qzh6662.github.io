@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sp0cket" />
+  <meta name="keywords" content="Android Studio," />
 
 
 
@@ -69,13 +69,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="sp0cket的博客">
-<meta property="og:url" content="http://coding.sp0cket.top/page/2/index.html">
+<meta name="description" content="方式一：通过Android Studio自带向导进行签名：直接点击菜单栏Build&amp;gt;Generate Signed APK...进入签名向导。可以直接创建签名文件，或者选择一个已存在的签名文件进行签名，之后该向导会直接引导用户导出签名后的apk文件。这种方式使用图形化界面引导用户相对使用命令行来说比较简单。 方式二：通过配置build.gradle：在Moudle:app的build.gra">
+<meta name="keywords" content="Android Studio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Studio打包签名">
+<meta property="og:url" content="http://coding.sp0cket.top/post/3cf7.html">
 <meta property="og:site_name" content="sp0cket的博客">
+<meta property="og:description" content="方式一：通过Android Studio自带向导进行签名：直接点击菜单栏Build&amp;gt;Generate Signed APK...进入签名向导。可以直接创建签名文件，或者选择一个已存在的签名文件进行签名，之后该向导会直接引导用户导出签名后的apk文件。这种方式使用图形化界面引导用户相对使用命令行来说比较简单。 方式二：通过配置build.gradle：在Moudle:app的build.gra">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-20T18:35:32.598Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sp0cket的博客">
+<meta name="twitter:title" content="Android Studio打包签名">
+<meta name="twitter:description" content="方式一：通过Android Studio自带向导进行签名：直接点击菜单栏Build&amp;gt;Generate Signed APK...进入签名向导。可以直接创建签名文件，或者选择一个已存在的签名文件进行签名，之后该向导会直接引导用户导出签名后的apk文件。这种方式使用图形化界面引导用户相对使用命令行来说比较简单。 方式二：通过配置build.gradle：在Moudle:app的build.gra">
 
 
 
@@ -105,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://coding.sp0cket.top/page/2/"/>
+  <link rel="canonical" href="http://coding.sp0cket.top/post/3cf7.html"/>
 
 
 
 
 
-  <title>sp0cket的博客</title>
+  <title>Android Studio打包签名 | sp0cket的博客</title>
   
 
 
@@ -130,8 +135,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,251 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://coding.sp0cket.top/post/5205.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sp0cket">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sp0cket的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/post/5205.html" itemprop="url">折腾一下博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-27T19:48:45+08:00">
-                2016-11-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>从一开始用有道云笔记来记录学习内容，到csdn(<del>国内最大的同性交友平台吧</del>)，再到自己折腾wordpress，直到现在的Hexo。</p>
-<p>不过在过程中也学到了不少东西，特别是折腾wordpress，自己搞了台vps，然后配mysql加ssh加防火墙封端口（以前用python做了个小Demo没关电脑，第二天电脑就被黑了可能是3306端口爆破进来的。还留了个木马，反编译出来有个url去拜访了一下，可能是个脚本小子）纠结过apache和nginx，还有主题、插件啊什么的感觉搞得太复杂了，而且维护成本有点高（我的vps只是想用来爬墙的），不过优点是可定制化程度很高。</p>
-<p>以后看有没有时间把以前的东西搬到这个博客上来，总的来说这里还是挺方便的。有空就来记录一下吧…</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://coding.sp0cket.top/post/7a93.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sp0cket">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sp0cket的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/post/7a93.html" itemprop="url">iOS日期改变监听</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-20T10:11:39+08:00">
-                2016-11-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天遇到个需求需要统计当天的流水信息，如果过了当天24点之后需要重新开始统计，还要对之前统计的数据做一些处理。有两种方案：一、加个定时器定时获取当前时间，对比两次获取的日期不同则触发日期改变操作。这种方式实时性不高，没必要每秒都去判断一次，但是拉长计时器时间的话就会产生延迟的问题。二、监听系统通知，日期改变的时候会触发<code>NSNotification.Name.NSCalendarDayChanged</code>通知。只需要对这个通知添加观察者就可以捕获日期改变事件，即使用户是手动改变日期，APP进入前台后也会接收到该通知。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -488,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/post/3cf7.html" itemprop="url">Android Studio打包签名</a></h1>
+          <h1 class="post-title" itemprop="name headline">Android Studio打包签名</h1>
         
 
         <div class="post-meta">
@@ -540,9 +300,7 @@
       
 
       
-        
-          
-            <h2 id="方式一：通过Android-Studio自带向导进行签名："><a href="#方式一：通过Android-Studio自带向导进行签名：" class="headerlink" title="方式一：通过Android Studio自带向导进行签名："></a>方式一：通过Android Studio自带向导进行签名：</h2><p>直接点击菜单栏<code>Build&gt;Generate Signed APK...</code>进入签名向导。可以直接创建签名文件，或者选择一个已存在的签名文件进行签名，之后该向导会直接引导用户导出签名后的apk文件。这种方式使用图形化界面引导用户相对使用命令行来说比较简单。</p>
+        <h2 id="方式一：通过Android-Studio自带向导进行签名："><a href="#方式一：通过Android-Studio自带向导进行签名：" class="headerlink" title="方式一：通过Android Studio自带向导进行签名："></a>方式一：通过Android Studio自带向导进行签名：</h2><p>直接点击菜单栏<code>Build&gt;Generate Signed APK...</code>进入签名向导。可以直接创建签名文件，或者选择一个已存在的签名文件进行签名，之后该向导会直接引导用户导出签名后的apk文件。这种方式使用图形化界面引导用户相对使用命令行来说比较简单。</p>
 <h2 id="方式二：通过配置build-gradle："><a href="#方式二：通过配置build-gradle：" class="headerlink" title="方式二：通过配置build.gradle："></a>方式二：通过配置build.gradle：</h2><p>在Moudle:app的build.gradle文件中修改配置如下：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">android&#123;</span><br><span class="line">	signingConfigs &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            keyAlias '别名'</span><br><span class="line">            keyPassword '密码'</span><br><span class="line">            storeFile file('钥匙串路径')</span><br><span class="line">            storePassword '签名文件密码'</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        debug &#123;</span><br><span class="line">            buildConfigField "boolean", "DEBUG_LOG", "true"    //打开LOG输出</span><br><span class="line">            minifyEnabled false     //是否混淆</span><br><span class="line">            zipAlignEnabled true    //Zipalign优化</span><br><span class="line">            shrinkResources true    //移除无用的resource文件</span><br><span class="line">            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'   //加载默认的混淆配置文件和自定义混淆配置文件</span><br><span class="line">            signingConfig signingConfigs.debug    //签名（此处的签名文件可以不配置，系统会默认生成一个debug key）</span><br><span class="line">        &#125;</span><br><span class="line">        release &#123;</span><br><span class="line">            buildConfigField "boolean", "DEBUG_LOG", "false"</span><br><span class="line">            minifyEnabled true</span><br><span class="line">            zipAlignEnabled true</span><br><span class="line">            shrinkResources true</span><br><span class="line">            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'</span><br><span class="line">            signingConfig signingConfigs.release    //此处的release就是上面signingConfigs中声明的</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>signingConfigs中的四项内容就是生成签名文件的时候填写的内容，四项内容缺一不可，而且必须保证每一项都填写正确，否则生成的时候会报错。之后在Android Studio下方的Terminal中执行<code>./gradlew assembleRelease</code>来生成apk文件。</p>
@@ -551,8 +309,6 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org.gradle.daemon=true</span><br></pre></td></tr></table></figure>
 <p>这项配置可以提高生成速度，个人测试时编译速度能提高一倍。如果不加这项配置则需要在每次编译时执行<code>./gradlew --daemon assembleRelease</code>来达到相同效果。不过打开这个选项时gradle也会占用一定内存，它是通过打开一个持续的编译进程来达到加速的目的，可以在开发结束之后执行<code>./gradlew --stop</code>来释放掉这些内存</p>
 
-          
-        
       
     </div>
     
@@ -567,146 +323,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://coding.sp0cket.top/post/87c1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sp0cket">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sp0cket的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/post/87c1.html" itemprop="url">解决OS X 10.11下cocoapods无法更新</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-02-05T18:12:26+08:00">
-                2016-02-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Android-Studio/" rel="tag"># Android Studio</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这个在stackoverflow上有相关的问题，原因是由于10.11新特性，在最新的系统中打开了rootless模式，导致更新时出现如下问题：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo gem install cocoapods --pre</span><br><span class="line">Fetching: cocoapods-core-1.0.0.beta.3.gem (100%)</span><br><span class="line">Successfully installed cocoapods-core-1.0.0.beta.3</span><br><span class="line">Fetching: cocoapods-1.0.0.beta.3.gem (100%)</span><br><span class="line">ERROR:  While executing gem ... (Errno::EPERM)</span><br><span class="line">Operation not permitted - /usr/bin/pod</span><br></pre></td></tr></table></figure>
-<p>可以手动关闭该模式进行更新。不过还有种更简单安全的方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gem install -n /usr/local/bin cocoapods</span><br></pre></td></tr></table></figure>
-<p>直接执行即可。</p>
-<p><a href="http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error" target="_blank" rel="noopener">stackoverflow相关问题链接</a></p>
-<hr>
-<p>附1：目前taobao源已停止维护，请大家看cocoapods安装教程时不要使用taobao源。目前推荐使用ruby社区的源：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem sources -a https://gems.ruby-china.org/</span><br></pre></td></tr></table></figure>
-<p>如果产生ssl问题可以使用http协议上面这行里面的https改成http就行了</p>
-<hr>
-<p>附2：最新版本的cocoapods需要使用ruby 2.2以上版本才能更新，更新方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -L get.rvm.io | bash -s stable</span><br><span class="line">source ~/.profile</span><br><span class="line">rvm install 2.2.4</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/87c1.html" rel="next" title="解决OS X 10.11下cocoapods无法更新">
+                <i class="fa fa-chevron-left"></i> 解决OS X 10.11下cocoapods无法更新
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/7a93.html" rel="prev" title="iOS日期改变监听">
+                iOS日期改变监听 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -716,14 +366,11 @@
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -731,6 +378,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -751,8 +402,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <p class="site-author-name" itemprop="name">sp0cket</p>
@@ -818,6 +478,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方式一：通过Android-Studio自带向导进行签名："><span class="nav-number">1.</span> <span class="nav-text">方式一：通过Android Studio自带向导进行签名：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方式二：通过配置build-gradle："><span class="nav-number">2.</span> <span class="nav-text">方式二：通过配置build.gradle：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

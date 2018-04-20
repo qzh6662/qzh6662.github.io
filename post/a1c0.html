@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sp0cket" />
+  <meta name="keywords" content="Git," />
 
 
 
@@ -69,13 +69,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="sp0cket的博客">
-<meta property="og:url" content="http://coding.sp0cket.top/archives/page/2/index.html">
+<meta name="description" content="出现该错误的原因是git上传单文件大小不能超过10M，导致服务器拒绝。解决方式是通过修改git中设置,http post最大值为150MB，命令如下： 1git config --local http.postBuffer 157286400 但是不建议更改该设置，过大的文件不建议添加到git跟踪库中">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git push 502错误">
+<meta property="og:url" content="http://coding.sp0cket.top/post/a1c0.html">
 <meta property="og:site_name" content="sp0cket的博客">
+<meta property="og:description" content="出现该错误的原因是git上传单文件大小不能超过10M，导致服务器拒绝。解决方式是通过修改git中设置,http post最大值为150MB，命令如下： 1git config --local http.postBuffer 157286400 但是不建议更改该设置，过大的文件不建议添加到git跟踪库中">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-20T18:35:32.600Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sp0cket的博客">
+<meta name="twitter:title" content="Git push 502错误">
+<meta name="twitter:description" content="出现该错误的原因是git上传单文件大小不能超过10M，导致服务器拒绝。解决方式是通过修改git中设置,http post最大值为150MB，命令如下： 1git config --local http.postBuffer 157286400 但是不建议更改该设置，过大的文件不建议添加到git跟踪库中">
 
 
 
@@ -105,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://coding.sp0cket.top/archives/page/2/"/>
+  <link rel="canonical" href="http://coding.sp0cket.top/post/a1c0.html"/>
 
 
 
 
 
-  <title>归档 | sp0cket的博客</title>
+  <title>Git push 502错误 | sp0cket的博客</title>
   
 
 
@@ -130,7 +135,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,189 +219,153 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://coding.sp0cket.top/post/a1c0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sp0cket">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="sp0cket的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Git push 502错误</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-08T10:05:07+08:00">
+                2016-12-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 14 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2016">2016</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/5205.html" itemprop="url">
-              
-                <span itemprop="name">折腾一下博客</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-27T19:48:45+08:00"
-              content="2016-11-27" >
-          11-27
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/7a93.html" itemprop="url">
-              
-                <span itemprop="name">iOS日期改变监听</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-20T10:11:39+08:00"
-              content="2016-11-20" >
-          11-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/3cf7.html" itemprop="url">
-              
-                <span itemprop="name">Android Studio打包签名</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-10T21:07:09+08:00"
-              content="2016-10-10" >
-          10-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>出现该错误的原因是git上传单文件大小不能超过10M，导致服务器拒绝。解决方式是通过修改git中设置,http post最大值为150MB，命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --local http.postBuffer 157286400</span><br></pre></td></tr></table></figure>
+<p>但是不建议更改该设置，过大的文件不建议添加到git跟踪库中</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/post/87c1.html" itemprop="url">
-              
-                <span itemprop="name">解决OS X 10.11下cocoapods无法更新</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-02-05T18:12:26+08:00"
-              content="2016-02-05" >
-          02-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/cc43.html" rel="next" title="手动创建swift 3中的自动释放池，并且防止应用被调试">
+                <i class="fa fa-chevron-left"></i> 手动创建swift 3中的自动释放池，并且防止应用被调试
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/871.html" rel="prev" title="react-native开坑第一篇">
+                react-native开坑第一篇 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -404,6 +373,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
